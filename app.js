@@ -80,7 +80,6 @@ btnFrase.addEventListener("click", (e) => {
         showInfo(frases[otroIndice]);
         otroIndice++;
     }
-    showInfo(frases[indiceAleatorio]);
 });
 modalEl.addEventListener("click", (e) => {
 
