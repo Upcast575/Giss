@@ -71,8 +71,15 @@ const frases = [
     "Gracias por hacer mis noches mas lindas, amenas y felices",
     "Escuchar tu voz mientras me cuentas cualquier cosa sobre ti, es lo mas tranquilo",
 ]
+let otroIndice = 0;
 btnFrase.addEventListener("click", (e) => {
-    const indiceAleatorio = Math.floor(Math.random() * frases.length);
+    if(otroIndice >= frases.length){
+        otroIndice = 0;
+        showInfo(frases[indiceAleatorio]);
+    }else{
+        showInfo(frases[indiceAleatorio]);
+        otroIndice++;
+    }
     showInfo(frases[indiceAleatorio]);
 });
 modalEl.addEventListener("click", (e) => {
