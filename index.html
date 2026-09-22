@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulinda ❤️</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center ">
+        <div class="my-5 d-flex justify-content-center align-items-center">
+            <img src="img/otra.png" alt="Flor amarilla" class="flor">
+        </div>
+        <div>
+            <button class="btn btn-primary" id="btnMusica">Escuchame :3</button>
+        </div>
+        <div class="my-5">
+            <button type="button" class="btn boton-verdesito" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Puchame
+            </button>
+            <button id="btnCorazones" class="btn btn-danger">
+                ❤️ Para ti
+            </button>
+            <div id="corazones" class="corazones"></div>
+        </div>
+        <div>
+            <button id="btnModal2" class="btn boton-moradito">
+            ¿Que pienso?
+            </button>
+        </div>
+    </div>
+    
+
+    <!-- Modal -->
+    <dialog id="modal2">
+        <div class="content"></div>
+    </dialog>
+    <div class="modal fade fondo-modal" id="staticBackdrop" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content fondo-verde">
+                <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="led-text">❤️</h1>
+                    <img src="img/tulipanes.png" alt="Flor amarilla" class="flor-modal">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

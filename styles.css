@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    background: linear-gradient(135deg, green, black);
+    background-size: cover;
+    min-height: 100vh;
+    /* background-color: black; */
+    /* overflow: hidden; */
+}
+
+
+.flor {
+    width: 70%;
+    max-width: 700px;
+    height: auto;
+    object-fit: contain;
+}
+.flor-modal{
+    width: 70%;
+    max-width: 700px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.led-text {
+    color: #ffb700;
+    font-size: clamp(4rem, 10vw, 9rem);
+    font-weight: bold;
+    font-family: 'Helvetica Neue';
+    text-align: center;
+}
+
+
+.cajita-gradiente{
+    box-shadow: 0 1rem 3rem rgba(255, 193, 7, .5);
+}
+
+.boton-verdesito{
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+}
+
+.boton-moradito{
+    background-color: #8A37D2;
+    border-color: #8A37D2;
+    color: white;
+}
+
+
+.corazones {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.corazon {
+    position: absolute;
+    bottom: -50px;
+    color: red;
+    font-size: 25px;
+    animation: subir 5s linear forwards;
+}
+
+@keyframes subir {
+    0% {
+        transform: translateY(0) scale(0.5);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-50vh) scale(1);
+    }
+
+    100% {
+        transform: translateY(-110vh) scale(1.2);
+        opacity: 0;
+    }
+}
+
+.fondo-verde {
+    background: linear-gradient(135deg, green, black);
+    border: none;
+}
+
+.fondo-modal{
+    background: rgba(0, 0, 0, 1);
+}
+
+#modal2 {
+    border: none;
+    border-radius: 15px;
+    padding: 0;
+    background: transparent;
+}
+
+#modal2::backdrop {
+    background: rgba(0, 0, 0, 1);
+}
+
+#modal2 .modal-content {
+    border-radius: 15px;
+    padding: 10px 50px 20px;
+}
