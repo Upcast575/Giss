@@ -75,9 +75,9 @@ let otroIndice = 0;
 btnFrase.addEventListener("click", (e) => {
     if(otroIndice >= frases.length){
         otroIndice = 0;
-        showInfo(frases[indiceAleatorio]);
+        showInfo(frases[otroIndice]);
     }else{
-        showInfo(frases[indiceAleatorio]);
+        showInfo(frases[otroIndice]);
         otroIndice++;
     }
     showInfo(frases[indiceAleatorio]);
