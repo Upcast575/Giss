@@ -73,12 +73,12 @@ const frases = [
 ]
 let otroIndice = 0;
 btnFrase.addEventListener("click", (e) => {
-    if(otroIndice >= frases.length){
+    showInfo(frases[otroIndice]);
+
+    otroIndice++;
+
+    if (otroIndice >= frases.length) {
         otroIndice = 0;
-        showInfo(frases[otroIndice]);
-    }else{
-        showInfo(frases[otroIndice]);
-        otroIndice++;
     }
 });
 modalEl.addEventListener("click", (e) => {
